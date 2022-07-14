@@ -1,5 +1,8 @@
  node {
    checkout scm
+   
+   sh "git rev-parse --short HEAD > commit-id"
+  
    stage "Hello"
       sh "echo Hello World"
       
