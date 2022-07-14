@@ -1,4 +1,5 @@
  node {
+   checkout scm
    stage "Hello"
       sh "echo Hello World"
       
